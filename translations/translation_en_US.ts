@@ -32,4 +32,34 @@
             <translation type="obsolete">behavior_1</translation>
         </message>
     </context>
+    <context>
+        <name>orlando furioso 2025/behavior.xar:/Say</name>
+        <message>
+            <location filename="orlando furioso 2025/behavior.xar" line="0"/>
+            <source>Orlando Furioso 2025</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Orlando Furioso 2025</translation>
+        </message>
+    </context>
+    <context>
+        <name>parla/behavior.xar:/Animated Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+    </context>
+    <context>
+        <name>parla/behavior.xar:/Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>Orlando Furioso 2025</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Orlando Furioso 2025</translation>
+        </message>
+    </context>
 </TS>
