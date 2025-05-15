@@ -7,9 +7,15 @@
         <BehaviorDescription name="behavior" src="seduto" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="disperato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="control" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="led" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="cuoreOFF" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="cuoreON" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="cuore" src="html/cuore.gif" />
+        <File name="cuore2" src="html/cuore2.gif" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
     <Translations auto-fill="en_US">

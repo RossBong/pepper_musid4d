@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="pepper-b1886f" version="0.0.0">
+<package version="0.0.0" uuid="pepper-b1886f">
  <names>
   <name lang="en_US">Untitled</name>
  </names>
@@ -27,12 +27,20 @@
   </behaviorContent>
   <behaviorContent path="disperato">
    <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="control">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="cuoreOFF">
+   <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="control">
+  <behaviorContent path="cuoreON">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
