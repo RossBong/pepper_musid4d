@@ -33,14 +33,26 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+<<<<<<< Updated upstream
   <behaviorContent path="cuoreOFF">
+=======
+  <behaviorContent path="tactus">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="corno">
+>>>>>>> Stashed changes
    <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
    <permissions/>
   </behaviorContent>
+<<<<<<< Updated upstream
   <behaviorContent path="cuoreON">
+=======
+  <behaviorContent path="orchestra">
+>>>>>>> Stashed changes
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
