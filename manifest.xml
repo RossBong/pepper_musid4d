@@ -1,58 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="pepper-b1886f">
- <names>
-  <name lang="en_US">Untitled</name>
- </names>
- <supportedLanguages>
-  <language>en_US</language>
- </supportedLanguages>
+<package version="0.0.0">
  <descriptionLanguages>
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="look">
+  <behaviorContent path="medoro">
    <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="stand">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="seduto">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="disperato">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="control">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-<<<<<<< Updated upstream
-  <behaviorContent path="cuoreOFF">
-=======
-  <behaviorContent path="tactus">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="corno">
->>>>>>> Stashed changes
+  <behaviorContent path="schermo">
    <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
    <permissions/>
   </behaviorContent>
-<<<<<<< Updated upstream
-  <behaviorContent path="cuoreON">
-=======
-  <behaviorContent path="orchestra">
->>>>>>> Stashed changes
+  <behaviorContent path="schermo-braccio">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

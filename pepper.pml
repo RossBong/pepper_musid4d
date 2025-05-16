@@ -8,15 +8,15 @@
         <BehaviorDescription name="behavior" src="disperato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="control" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="led" xar="behavior.xar" />
-<<<<<<< Updated upstream
-        <BehaviorDescription name="behavior" src="cuoreOFF" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="cuoreON" xar="behavior.xar" />
-=======
         <BehaviorDescription name="behavior" src="tactus" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="corno" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="orlando furioso 2025" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="orchestra" xar="behavior.xar" />
->>>>>>> Stashed changes
+        <BehaviorDescription name="behavior" src="cuoreOFF" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="cuoreON" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="medoro" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="schermo" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="schermo-braccio" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

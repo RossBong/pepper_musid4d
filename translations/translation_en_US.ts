@@ -33,6 +33,15 @@
         </message>
     </context>
     <context>
+        <name>medoro/behavior.xar:/Say</name>
+        <message>
+            <location filename="medoro/behavior.xar" line="0"/>
+            <source>Medoro! Medoro! Medoro! </source>
+            <comment>Text</comment>
+            <translation type="unfinished">Medoro! Medoro! Medoro! </translation>
+        </message>
+    </context>
+    <context>
         <name>orlando furioso 2025/behavior.xar:/Say</name>
         <message>
             <location filename="orlando furioso 2025/behavior.xar" line="0"/>
