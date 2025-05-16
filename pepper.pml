@@ -17,6 +17,9 @@
         <BehaviorDescription name="behavior" src="medoro" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="schermo" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="schermo-braccio" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="Rai" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="senno" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="lato" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
