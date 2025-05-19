@@ -17,29 +17,67 @@
         # Movimenti alternati per simulare il direttore d'orchestra
         names = ["RElbowRoll", "LElbowRoll", "RElbowYaw", "LElbowYaw", "RHand", "LHand", "RShoulderPitch","LShoulderPitch","RShoulderRoll", "LShoulderRoll","RWristYaw", "LWristYaw" ]
 
+        joints_dx = [names[i] for i in range(0,len(names),2)]
+        joints_sx = [names[i] for i in range(1,len(names),2)]
+
         # Angoli iniziali
-        #angleLists_1 = [1.2968, -1.2968, 1.5062, -1.5062, 1, 1, 0.2827, 0.2827, -0.1030, 0.1030, -1.5167, 1.5167 ]
-        #angleLists_2 = [0.7679, -0.7679, 1.5708, -1.5708, 1, 1, 0.9146, 0.9146, -1.1065, 1.1065, -0.4922, 0.4922 ]
         angle1=[20.5, -20.5, 70.8, -70.8, 57, 57, 2.8, 2.8, -8.4, 8.4, -65.6, 65.6]
         angle2=[42.7, -42.7, 69.4, -69.4, 57, 57, 51.2, 51.2, -25.8, 25.8, -56.6, 56.6]
         angle3=[50.7, -50.7, 44.4, -44.4, 57, 57, 1.5, 1.5, -49.9, 49.9, -23.6, 23.6]
 
-        angleLists_1 = [x * 3.14/ 180 for x in angle1]
-        angleLists_2 = [x * 3.14/ 180 for x in angle2]
-        angleLists_3 = [x * 3.14/ 180 for x in angle3]
+        angle1_dx = [angle1[i] for i in range(0,len(angle1),2)]
+        angle1_sx = [angle1[i] for i in range(1,len(angle1),2)]
+        angle2_dx = [angle2[i] for i in range(0,len(angle2),2)]
+        angle2_sx = [angle2[i] for i in range(1,len(angle2),2)]
+        angle3_dx = [angle3[i] for i in range(0,len(angle3),2)]
+        angle3_sx = [angle3[i] for i in range(1,len(angle3),2)]
+
+        angleList1 = [x * 3.14/ 180 for x in angle1]
+        angleList2 = [x * 3.14/ 180 for x in angle2]
+        angleList3 = [x * 3.14/ 180 for x in angle3]
+
+        angleList1_dx = [x * 3.14/ 180 for x in angle1_dx]
+        angleList1_sx = [x * 3.14/ 180 for x in angle1_sx]
+        angleList2_dx = [x * 3.14/ 180 for x in angle2_dx]
+        angleList2_sx = [x * 3.14/ 180 for x in angle2_sx]
+        angleList3_dx = [x * 3.14/ 180 for x in angle3_dx]
+        angleList3_sx = [x * 3.14/ 180 for x in angle3_sx]
 
         # Velocità del movimento
-        speed = 0.4
+        speed = 0.2
 
         # Loop per simulare il movimento ritmico
-        for _ in range(5):  # Esegue 5 cicli di movimento
-            self.motion.angleInterpolationWithSpeed(names, angleLists_1, speed)
-            #time.sleep(1.5)
-            self.motion.angleInterpolationWithSpeed(names, angleLists_2, speed)
-            #time.sleep(1.5)
-            self.motion.angleInterpolationWithSpeed(names, angleLists_3, speed)
-            self.motion.angleInterpolationWithSpeed(names, angleLists_2, speed)
-        self.motion.angleInterpolationWithSpeed(names, angleLists_1, speed)
+        for _ in range(2):  # Esegue 5 cicli di movimento
+            self.motion.angleInterpolationWithSpeed(names, angleList1, speed)
+            self.motion.angleInterpolationWithSpeed(names, angleList2, speed)
+            self.motion.angleInterpolationWithSpeed(names, angleList3, speed)
+            self.motion.angleInterpolationWithSpeed(names, angleList2, speed)
+
+        self.motion.angleInterpolationWithSpeed(names, angleList1, speed)
+        self.motion.setAngles("HeadYaw", -0.5, speed)
+
+        for _ in range(1):  # Esegue 5 cicli di movimento
+            self.motion.angleInterpolationWithSpeed(joints_dx, angleList1_dx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_dx, angleList2_dx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_dx, angleList3_dx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_dx, angleList2_dx, speed)
+
+        self.motion.angleInterpolationWithSpeed(names, angleList1, speed)
+        self.motion.setAngles("HeadYaw", 0.5, speed)
+
+        for _ in range(1):  # Esegue 5 cicli di movimento
+            self.motion.angleInterpolationWithSpeed(joints_sx, angleList1_sx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_sx, angleList2_sx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_sx, angleList3_sx, speed)
+            self.motion.angleInterpolationWithSpeed(joints_sx, angleList2_sx, speed)
+
+        self.motion.angleInterpolationWithSpeed(names, angleList1, speed)
+        self.motion.setAngles("HeadYaw", 0.0, speed)
+
+        self.motion.angleInterpolationWithSpeed(names, angleList2, speed)
+        self.motion.angleInterpolationWithSpeed(names, angleList3, speed)
+        self.motion.angleInterpolationWithSpeed(names, angleList2, speed)
+        self.motion.angleInterpolationWithSpeed(names, angleList1, speed)
 
         self.onStopped()  #activate the output of the box
         pass

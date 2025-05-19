@@ -9,19 +9,17 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="Rai/behavior.xar" line="0"/>
             <source>ciao sono Pepper</source>
             <comment>Text</comment>
-            <translation type="unfinished">ciao sono Pepper</translation>
+            <translation type="obsolete">ciao sono Pepper</translation>
         </message>
     </context>
     <context>
         <name>Rai/behavior.xar:/Say (1)</name>
         <message>
-            <location filename="Rai/behavior.xar" line="0"/>
             <source>Benvenuti al Laboratorio di robotica dell'università degli studi di Palermo</source>
             <comment>Text</comment>
-            <translation type="unfinished">Benvenuti al Laboratorio di robotica dell'università degli studi di Palermo</translation>
+            <translation type="obsolete">Benvenuti al Laboratorio di robotica dell'università degli studi di Palermo</translation>
         </message>
     </context>
     <context>

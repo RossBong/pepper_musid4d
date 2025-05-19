@@ -3,8 +3,6 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="look" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="stand" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="seduto" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="disperato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="control" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="led" xar="behavior.xar" />
@@ -17,9 +15,9 @@
         <BehaviorDescription name="behavior" src="medoro" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="schermo" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="schermo-braccio" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="Rai" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="senno" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="lato" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="led_off" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

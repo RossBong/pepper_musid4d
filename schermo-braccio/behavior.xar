@@ -46,24 +46,39 @@
         # Angoli iniziali
         names1 = [names[i] for i in range(0,len(names),2)]
         names2 = [names[i] for i in range(1,len(names),2)]
+        speed = 0.4
 
+        right = self.getParameter("right")
 
-        angle1 = [30.3, 86, 57, 3.3, -59.4, 85]#right
-        angle2 = [-6.3, -70.7, 57, 14.7, 0.5,-6.9] #-102.6]#left
+        if right:
+
+            angle1 = [30.3, 86, 57, 3.3, -59.4, 85] #braccio teso
+            angle2 = [-6.3, -70.7, 57, 14.7, 0.5, -6.9] #braccio schermo
+
+        else:
+            angle1 = [-30.3, -86, 57, 3.3, 59.4, -85]
+            angle2 = [6.3, 70.7, 57, 14.7, -0.5, 6.9]
 
         angleLists_1 = [x * 3.14/ 180 for x in angle1]
         angleLists_2 = [x * 3.14/ 180 for x in angle2]
 
         # Velocità del movimento
-        speed = 0.4
+
+        if right:
 
         # Loop per simulare il movimento ritmico
-        self.motion.angleInterpolationWithSpeed(names1, angleLists_1, speed)
-        self.motion.angleInterpolationWithSpeed(names2, angleLists_2, speed)
+            self.motion.angleInterpolationWithSpeed(names2, angleLists_2, speed)
+            self.motion.setAngles(["HeadYaw", "HeadPitch"], [-1.0, -0.3], speed)
+            self.motion.angleInterpolationWithSpeed(names1, angleLists_1, speed)
+
+        else:
+            self.motion.angleInterpolationWithSpeed(names1, angleLists_2, speed)
+            self.motion.setAngles(["HeadYaw", "HeadPitch"], [1.0, -0.3], speed)
+            self.motion.angleInterpolationWithSpeed(names2, angleLists_1, speed)
 
         self.onStopped()  #activate the output of the box
         pass
 
     def onInput_onStop(self):
         self.onUnload()  #it is recommended to reuse the clean-up as the box is stopped
-        self.onStopped()  #activate the output of the box]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /></Box><Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="4" /><Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box></ChoregrapheProject>
+        self.onStopped()  #activate the output of the box]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Parameter name="right" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="" id="5" /></Box><Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="4" /><Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box></ChoregrapheProject>

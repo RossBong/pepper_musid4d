@@ -14,19 +14,18 @@
 
     def onInput_onStart(self):
 
-        names  = ["RShoulderRoll","LShoulderRoll","RWristYaw","LWristYaw","RElbowRoll","LElbowRoll","RShoulderPitch","LShoulderPitch","RElbowYaw","LElbowYaw"]
-        angleLists  = [-0.01, -0.01, 1.66, -1.66, 1.55, -1.55, -0.38, -0.38, 0.84, -0.84]
+        names = ["RElbowRoll", "LElbowRoll", "RElbowYaw", "LElbowYaw", "RHand", "LHand", "RShoulderPitch","LShoulderPitch","RShoulderRoll", "LShoulderRoll","RWristYaw", "LWristYaw" ]
 
-                        #[-0.5, -0.5, 95.0, 95.0, 89.0, 89.0, -22.0, -22.0, 48.0, 48.0]
+        angle = [88.9, -88.9, 54.3, -54.3, 26.4, 26.4, -0.2, -0.2, -5.2, 5.2, 91.4, -91.4]
 
+        #angle  = [-0.01, -0.01, 1.66, -1.66, 1.55, -1.55, -0.38, -0.38, 0.84, -0.84]
 
-
+        angleList = [x * 3.14/ 180 for x in angle]
 
         self.animation.run("animations/Stand/Gestures/Desperate_5")
         #self.motion.angleInterpolationWithSpeed("RShoulderRoll", -0.5, 0.2)
         #elf.motion.angleInterpolationWithSpeed("RShoulderPitch", -22.0, 0.2)
-        self.motion.setAngles(names, angleLists, 0.1)
-        self.motion.setAngles(names, angleLists, 0.1)
+        self.motion.setAngles(names, angleList, 0.1)
 
 
 
