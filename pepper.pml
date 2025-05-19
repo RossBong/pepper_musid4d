@@ -18,6 +18,8 @@
         <BehaviorDescription name="behavior" src="senno" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="lato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="led_off" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="leggio" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="tablet" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
