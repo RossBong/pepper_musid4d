@@ -3,8 +3,6 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="look" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="stand" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="seduto" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="disperato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="control" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="tactus" xar="behavior.xar" />
