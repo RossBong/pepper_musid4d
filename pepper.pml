@@ -7,7 +7,6 @@
         <BehaviorDescription name="behavior" src="seduto" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="disperato" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="control" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="led" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="tactus" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="corno" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="orlando furioso 2025" xar="behavior.xar" />
@@ -23,6 +22,7 @@
         <BehaviorDescription name="behavior" src="leggio" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="tablet" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="mani in alto" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="accensione" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

@@ -22,10 +22,16 @@
   </behaviorContent>
   <behaviorContent path="lato">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="led_off">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="leggio">
@@ -40,6 +46,10 @@
    <permissions/>
   </behaviorContent>
   <behaviorContent path="mani in alto">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="accensione">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
