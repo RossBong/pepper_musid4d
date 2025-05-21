@@ -21,6 +21,8 @@
         <BehaviorDescription name="behavior" src="tablet" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="mani in alto" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="accensione" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="HEAD" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="reazione" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

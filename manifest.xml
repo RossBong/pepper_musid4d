@@ -30,10 +30,16 @@
   </behaviorContent>
   <behaviorContent path="leggio">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="tablet">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="mani in alto">
@@ -41,6 +47,20 @@
    <permissions/>
   </behaviorContent>
   <behaviorContent path="accensione">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="HEAD">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="reazione">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

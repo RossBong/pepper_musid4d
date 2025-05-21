@@ -100,10 +100,15 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="senno/behavior.xar" line="0"/>
             <source>Restituiamo a Orlando il senno</source>
             <comment>Text</comment>
-            <translation type="unfinished">Restituiamo a Orlando il senno</translation>
+            <translation type="obsolete">Restituiamo a Orlando il senno</translation>
+        </message>
+        <message>
+            <location filename="senno/behavior.xar" line="0"/>
+            <source>Restituiamo il senno ad Orlando</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Restituiamo il senno ad Orlando</translation>
         </message>
     </context>
 </TS>
