@@ -23,6 +23,7 @@
         <BehaviorDescription name="behavior" src="accensione" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="HEAD" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="reazione" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="guida" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

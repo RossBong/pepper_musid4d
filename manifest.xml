@@ -10,6 +10,9 @@
   </behaviorContent>
   <behaviorContent path="schermo">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="schermo-braccio">
@@ -30,16 +33,10 @@
   </behaviorContent>
   <behaviorContent path="leggio">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="tablet">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="mani in alto">
@@ -55,12 +52,16 @@
   </behaviorContent>
   <behaviorContent path="HEAD">
    <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="reazione">
+   <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="reazione">
+  <behaviorContent path="guida">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
